@@ -1,0 +1,156 @@
+@import url("font-awesome.min.css");
+
+/* Bases du site (initialisation) */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	
+	html{
+		background-image:url("../../images/rose.jpg");
+		height:100%;
+	}
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+	body {
+		line-height: 1;
+		margin:15px;
+	}
+	
+	#main{
+				border-radius:5px;
+		border:medium solid black;
+		background: rgba(255,255,255,1);
+		background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(247,247,247,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(255,255,255,1)), color-stop(100%, rgba(247,247,247,1)));
+		background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(247,247,247,1) 100%);
+		background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(247,247,247,1) 100%);
+		background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(247,247,247,1) 100%);
+		background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(247,247,247,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7', GradientType=1 );	
+	
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+	blockquote, q {
+		quotes: none;
+	}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+	h1{
+		-webkit-font-smoothing: antialiased;
+		font-family:Birds Of Paradise;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+		font-weight:bold;
+		letter-spacing:2px;
+	}
+	
+	/*Boutons*/
+	
+	.bouton{
+		padding:10px;
+		background:pink;
+		border:1px solid white;
+		border-radius:30px;
+	}
+	
+	
+	/*ACCUEIL Moulin Rose */
+	
+		/*Bandeau Celinealoe-Forever*/
+	header{
+		position:relative;
+		width:100%;
+		height:120px;
+	}
+	header #logo{
+		width:200px;
+		margin:20px;
+	}
+	header .mrlogo{
+		width:120px;
+		margin-bottom:20px;
+	}
+	
+			/*Menu du bandeau*/
+	#menu {
+		position:absolute;
+		bottom:6px;
+		right:0;
+	}
+	
+	#menu a{
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		background: #ef3a7f; /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover, #ef3a7f 0%, #ea4182 1%, #ec3d80 1%, #e84282 2%, #ec3f81 3%, #e94081 4%, #ea407f 22%, #e94081 23%, #ec3d82 24%, #e9417f 24%, #e8407e 24%, #ee4085 25%, #e83f80 25%, #e6417d 25%, #f23d8a 25%, #f2288c 26%, #f02986 26%, #f02a82 27%, #f02986 28%, #f02a82 28%, #ee2983 43%, #f12a85 43%, #f42887 44%, #f02b85 44%, #f2267d 44%, #e54085 45%, #dd3280 45%, #dd3783 46%, #e03583 47%, #dc3682 69%, #dc3a83 71%, #dc446a 71%, #db4376 71%, #da436c 72%, #d84468 72%, #da4370 73%, #da416d 73%, #d9426d 89%, #dc4570 90%, #df3f6d 90%, #da3b64 90%, #db3d60 91%, #d93a62 91%, #dd3e66 92%, #da3b61 92%, #db3c64 92%, #db3c64 100%); /* FF3.6-15 */
+		background: -webkit-radial-gradient(center, ellipse cover, #ef3a7f 0%,#ea4182 1%,#ec3d80 1%,#e84282 2%,#ec3f81 3%,#e94081 4%,#ea407f 22%,#e94081 23%,#ec3d82 24%,#e9417f 24%,#e8407e 24%,#ee4085 25%,#e83f80 25%,#e6417d 25%,#f23d8a 25%,#f2288c 26%,#f02986 26%,#f02a82 27%,#f02986 28%,#f02a82 28%,#ee2983 43%,#f12a85 43%,#f42887 44%,#f02b85 44%,#f2267d 44%,#e54085 45%,#dd3280 45%,#dd3783 46%,#e03583 47%,#dc3682 69%,#dc3a83 71%,#dc446a 71%,#db4376 71%,#da436c 72%,#d84468 72%,#da4370 73%,#da416d 73%,#d9426d 89%,#dc4570 90%,#df3f6d 90%,#da3b64 90%,#db3d60 91%,#d93a62 91%,#dd3e66 92%,#da3b61 92%,#db3c64 92%,#db3c64 100%); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at center, #ef3a7f 0%,#ea4182 1%,#ec3d80 1%,#e84282 2%,#ec3f81 3%,#e94081 4%,#ea407f 22%,#e94081 23%,#ec3d82 24%,#e9417f 24%,#e8407e 24%,#ee4085 25%,#e83f80 25%,#e6417d 25%,#f23d8a 25%,#f2288c 26%,#f02986 26%,#f02a82 27%,#f02986 28%,#f02a82 28%,#ee2983 43%,#f12a85 43%,#f42887 44%,#f02b85 44%,#f2267d 44%,#e54085 45%,#dd3280 45%,#dd3783 46%,#e03583 47%,#dc3682 69%,#dc3a83 71%,#dc446a 71%,#db4376 71%,#da436c 72%,#d84468 72%,#da4370 73%,#da416d 73%,#d9426d 89%,#dc4570 90%,#df3f6d 90%,#da3b64 90%,#db3d60 91%,#d93a62 91%,#dd3e66 92%,#da3b61 92%,#db3c64 92%,#db3c64 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef3a7f', endColorstr='#db3c64',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		margin:5px;
+		padding:5px;
+		border:1px solid #ff0084;
+		border-radius:5px 5px 0 0;
+		color:white;
+		font-size:20px;
+		font-family:Birds Of Paradise;
+		letter-spacing:1px;
+	}
+	
+	.header-barre{
+		width:100%;
+		height:5px;
+		background: #ef3a7f; /* Old browsers */
+		background: -moz-linear-gradient(top, #ef3a7f 0%, #ea4182 1%, #ec3d80 1%, #e84282 2%, #ec3f81 3%, #e94081 4%, #ea407f 22%, #e94081 23%, #ec3d82 24%, #e9417f 24%, #e8407e 24%, #ee4085 25%, #e83f80 25%, #e6417d 25%, #f23d8a 25%, #f2288c 26%, #f02986 26%, #f02a82 27%, #f02986 28%, #f02a82 28%, #ee2983 43%, #f12a85 43%, #ee2985 43%, #f42887 44%, #f02b85 44%, #f2267d 44%, #e54085 45%, #dd3280 45%, #e03583 45%, #db3581 46%, #dd3783 46%, #e03583 47%, #dd3582 47%, #dc3682 69%, #df3482 70%, #dc3a83 71%, #dc446a 71%, #db4376 71%, #da436c 72%, #d84468 72%, #d9446e 72%, #da4370 73%, #da416d 73%, #d9426d 89%, #dc4570 90%, #df3f6d 90%, #da3b64 90%, #db3d60 91%, #d93a62 91%, #dd3e66 92%, #da3b61 92%, #db3c64 92%, #db3c64 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #ef3a7f 0%,#ea4182 1%,#ec3d80 1%,#e84282 2%,#ec3f81 3%,#e94081 4%,#ea407f 22%,#e94081 23%,#ec3d82 24%,#e9417f 24%,#e8407e 24%,#ee4085 25%,#e83f80 25%,#e6417d 25%,#f23d8a 25%,#f2288c 26%,#f02986 26%,#f02a82 27%,#f02986 28%,#f02a82 28%,#ee2983 43%,#f12a85 43%,#ee2985 43%,#f42887 44%,#f02b85 44%,#f2267d 44%,#e54085 45%,#dd3280 45%,#e03583 45%,#db3581 46%,#dd3783 46%,#e03583 47%,#dd3582 47%,#dc3682 69%,#df3482 70%,#dc3a83 71%,#dc446a 71%,#db4376 71%,#da436c 72%,#d84468 72%,#d9446e 72%,#da4370 73%,#da416d 73%,#d9426d 89%,#dc4570 90%,#df3f6d 90%,#da3b64 90%,#db3d60 91%,#d93a62 91%,#dd3e66 92%,#da3b61 92%,#db3c64 92%,#db3c64 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #ef3a7f 0%,#ea4182 1%,#ec3d80 1%,#e84282 2%,#ec3f81 3%,#e94081 4%,#ea407f 22%,#e94081 23%,#ec3d82 24%,#e9417f 24%,#e8407e 24%,#ee4085 25%,#e83f80 25%,#e6417d 25%,#f23d8a 25%,#f2288c 26%,#f02986 26%,#f02a82 27%,#f02986 28%,#f02a82 28%,#ee2983 43%,#f12a85 43%,#ee2985 43%,#f42887 44%,#f02b85 44%,#f2267d 44%,#e54085 45%,#dd3280 45%,#e03583 45%,#db3581 46%,#dd3783 46%,#e03583 47%,#dd3582 47%,#dc3682 69%,#df3482 70%,#dc3a83 71%,#dc446a 71%,#db4376 71%,#da436c 72%,#d84468 72%,#d9446e 72%,#da4370 73%,#da416d 73%,#d9426d 89%,#dc4570 90%,#df3f6d 90%,#da3b64 90%,#db3d60 91%,#d93a62 91%,#dd3e66 92%,#da3b61 92%,#db3c64 92%,#db3c64 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef3a7f', endColorstr='#db3c64',GradientType=0 ); /* IE6-9 */	
+	}
+
+	/*Contenu*/
+	
+	.contenu{
+		margin:50px;
+	}
+	.contenu h1{
+		font-size:30px;
+		text-align:center;
+		color:black;
+		text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	}
+	
+	#moulinrose{
+		padding-top:30px;
+	}
+	/*Footer*/
+	
+	.footer{
+		height:5px;
+	}
+	
+	.footer p{
+		margin-top:9px;
+		text-align:center;
+		font-family:Birds Of Paradise;
+		letter-spacing:1.1px;
+		text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	}

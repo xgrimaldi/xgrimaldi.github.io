@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Célinaloé : la source de bien-être</title>
+		<link rel="stylesheet" href="../style/css/mainG.css" />
+		<link rel="stylesheet" type="text/css" href="../style/jquery/sliderpro/dist/css/slider-pro.min.css" media="screen"/>
+		<script type="text/javascript" src="../style/jquery/sliderpro/libs/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="../style/jquery/sliderpro/dist/js/jquery.sliderPro.min.js"></script>
+		
+		<script type="text/javascript">
+			$( document ).ready(function( $ ) {
+				$( '#moulinrose' ).sliderPro({
+					width: 640,
+					height: 480,
+					arrows: true,
+					buttons: false,
+					waitForLayers: true,
+					thumbnailWidth: 200,
+					thumbnailHeight: 100,
+					thumbnailPointer: true,
+					autoplay: false,
+					autoScaleLayers: false,
+					breakpoints: {
+						500: {
+							thumbnailWidth: 120,
+							thumbnailHeight: 50
+						}
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="main">
+			<header>
+				<a href="accueilMr.html"><img id="logo" src="../images/logo.png" alt="Logo celinaloé" /></a>
+				<img class="mrlogo" src="../images/moulin rose logo.png" alt="Logo celinaloé" />
+				<nav id="menu">
+					<a href="accueil.html">Accueil Celinealoe</a>
+					<a href="accueilMr.html">Accueil</a>
+					<a href=#>A propos de moi</a>
+					<a href=#>Contactez-moi</a>
+				</nav>
+			</header>
+							<div class="header-barre">
+				</div>
+			<div class="contenu">
+				<div class="bouton bienvenue">
+					<h1>Bienvenue dans l'univers du plaisir et de la sensualité de 'Au Moulin Rose'.<br/>
+					Je vous invite à découvrir les produits proposés, et à me contactez si vous êtes intéressés </h1>
+					<br/>
+				</div>
+				<div id="moulinrose" class="slider-pro">
+					<div class="sp-slides">
+						<div class="sp-slide">
+							<img class="sp-image" src="../style/jquery/sliderpro/src/css/images/blank.gif"
+								data-src="../images/produitmr.jpg"
+								data-retina="http://bqworks.com/slider-pro/images/image1_large.jpg"/>
+							
+							<p class="sp-layer sp-white sp-padding"
+								data-horizontal="50" data-vertical="50"
+								data-show-transition="left" data-hide-transition="up" data-show-delay="400" data-hide-delay="200">
+								Lorem ipsum
+							</p>
+
+							<p class="sp-layer sp-black sp-padding hide-small-screen"
+								data-horizontal="180" data-vertical="50"
+								data-show-transition="left" data-hide-transition="up" data-show-delay="600" data-hide-delay="100">
+								dolor sit amet
+							</p>
+
+							<p class="sp-layer sp-white sp-padding hide-medium-screen"
+								data-horizontal="315" data-vertical="50"
+								data-show-transition="left" data-hide-transition="up" data-show-delay="800">
+								consectetur adipisicing elit.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<p>&copy Célinaloé</p>
+		</footer>
+	</body>
+	
+</html>
